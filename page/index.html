@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-card">
+      <div class="img-front-card">
+        <div class="front-card-inputs">
+          <div class="box-circles">
+            <div id="big-circle"></div>
+            <div id="small-circle"></div>
+          </div>
+          <div class="info-card-box">
+            <p id="numCard">0000 0000 0000 0000</p>
+            <div class="user-info-front">
+              <label for="name">Jane Appleseed</label>
+              <label for="data">00/00</label>
+            </div>
+          </div>
+        </div>
+        <img src="../images/bg-card-front.png" alt="front-card">
+      </div>
+      <div class="img-back-card">
+        <img src="../images/bg-card-back.png" alt="back-card">
+      </div>
+    </div>
+    <div class="create-form-card">
+      <div class="inputs-box">
+        <label for="cardholder">CARDHODLER NAME</label>
+        <input type="text" placeholder="e.g. Jane Appleseed">
+        <label for="cardnumber">CARD NUMBER</label>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="spec-input">
+          <div class="data">
+            <label for="date">EXP. DATE (MM/YY)</label>
+            <div class="data-format">
+              <input type="text" placeholder="MM">
+              <input type="text" placeholder="YY">
+            </div>
+          </div>
+          <div class="data">
+            <label for="cvc">CVC</label>
+            <input type="text" placeholder=" e.g. 123">
+          </div>
+        </div>
+        <button class="confirmBtn">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+
+  000
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+
+</html>
