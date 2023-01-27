@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk');
+
+:root {
+   --White: hsl(0, 0%, 100%);
+   --Light-grayish-violet: hsl(270, 3%, 87%);
+   --Dark-grayish-violet: hsl(279, 6%, 55%);
+   --Very-dark-violet: hsl(278, 68%, 11%);
+   --Linear-gradient: hsl(249, 99%, 64%);
+   --Linear-gradient-2: hsl(278, 94%, 30%);
+   --Red-error: hsl(0, 100%, 66%);
+}
+
+*,
+label,
+input {
+   outline: none;
+   border: none;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 500;
+}
+
+input::placeholder {
+   color: var(--Light-grayish-violet);
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   align-items: center;
+
+   color: var(--Very-dark-violet);
+}
+
+.container {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   background-image: url(../images/bg-main-desktop.png);
+   background-repeat: no-repeat;
+   background-size: 460px 100vh;
+}
+
+.box-card,
+.img-front-card,
+.img-back-card {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.img-front-card {
+   margin-top: 200px;
+   margin-right: 150px;
+}
+
+.img-back-card {
+   margin-bottom: 200px;
+   margin-left: 50px;
+}
+
+
+.create-form-card {
+   display: flex;
+   align-items: center;
+}
+
+.inputs-box {
+   display: grid;
+   align-items: center;
+   justify-content: center;
+}
+
+.inputs-box input,
+button {
+   font-size: 18px;
+   height: 3rem;
+   border-radius: 7px;
+   margin-top: 7px;
+   margin-bottom: 20px;
+   padding-left: 13px;
+}
+
+.inputs-box input {
+   border: 1px solid var(--Light-grayish-violet);
+}
+
+.confirmBtn {
+   color: var(--White);
+   background-color: var(--Very-dark-violet);
+}
+
+.spec-input {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 25px;
+}
+
+.data {
+   display: flex;
+   flex-direction: column;
+}
+
+.data-format {
+   display: flex;
+   gap: 15px;
+}
+
+.data-format input {
+   width: 100px;
+}
+
+.front-card-inputs {
+   position: absolute;
+   width: 400px;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.info-card-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+   color: white;
+   font-size: 26px;
+   letter-spacing: 5px;
+
+}
+
+#numCard {
+   text-align: center;
+   width: 100%;
+}
+
+.user-info-front {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.user-info-front label {
+   padding: 0px 10px;
+   text-transform: uppercase;
+   font-size: 14px;
+   letter-spacing: 2px;
+}
+
+.box-circles {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+}
+
+#big-circle {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+#small-circle {
+   border: 1px solid white;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+}
