@@ -41,6 +41,9 @@
       </div>
       <div class="img-back-card">
         <img src="../images/bg-card-back.png" alt="back-card">
+        <div class="back-info-card">
+          <label>000</label>
+        </div>
       </div>
     </div>
     <div class="create-form-card">
@@ -53,23 +56,19 @@
           <div class="data">
             <label for="date">EXP. DATE (MM/YY)</label>
             <div class="data-format">
-              <input type="text" placeholder="MM">
-              <input type="text" placeholder="YY">
+              <input type="number" placeholder="MM"pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">
+              <input type="number" placeholder="YY"pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
             </div>
           </div>
           <div class="data">
             <label for="cvc">CVC</label>
-            <input type="text" placeholder=" e.g. 123">
+            <input type="number" placeholder=" e.g. 123" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;">
           </div>
         </div>
         <button class="confirmBtn">Confirm</button>
       </div>
     </div>
   </div>
-
-  <!-- 
-
-  000
 
   <!-- Completed state start -->
 
