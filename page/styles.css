@@ -26,6 +26,7 @@ input::placeholder {
    color: var(--Light-grayish-violet);
 }
 
+
 body {
    width: 100vw;
    height: 100vh;
@@ -79,19 +80,26 @@ body {
 
 .inputs-box input,
 button {
-   font-size: 18px;
+   font-size: 20px;
    height: 3rem;
    border-radius: 7px;
    margin-top: 7px;
    margin-bottom: 20px;
    padding-left: 13px;
+   color: var(--Very-dark-violet);
 }
+.inputs-box input:focus,
+button:focus{
+   border: 1px solid var(--Linear-gradient-2);
+}
+
 
 .inputs-box input {
    border: 1px solid var(--Light-grayish-violet);
 }
 
 .confirmBtn {
+   cursor: pointer;
    color: var(--White);
    background-color: var(--Very-dark-violet);
 }
@@ -177,4 +185,16 @@ button {
    width: 25px;
    height: 25px;
    border-radius: 50%;
+}
+
+
+.back-info-card {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   position: absolute;
+   color: white;
+   letter-spacing: 3px;
+   font-size: 20px;
+   width: 350px;
 }
